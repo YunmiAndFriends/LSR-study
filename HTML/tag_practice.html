@@ -17,16 +17,48 @@
     <h2>선행학습</h2>
     <p>완전한 웹사이트 만들기 연습. 졸프의 노예 조원 이사랑!!</p>
     <table border="1">
-        <tr>
-            <th>이름</th>
-            <th>물건</th>
-            <th>행동</th>
-        </tr>
-        <tr>
-            <td>윤미야</td>
-            <td>레몬에이드</td>
-            <td>사줄게</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>성별</th>
+                <th>주소</th>
+                <th>회비</th>
+            </tr>
+        </thead>
+        <tfoot> <!--tfoot태그를 쓰면 어디에 놓든 표의 맨 아래 행으로 표현됨-->
+            <tr>
+                <td colspan="3">합계</td>
+               
+                <td>6800</td>
+            </tr>
+        </tfoot>
+        <tbody align="center">
+            <tr>
+                <td>정윤미</td>
+                <td rowspan="4">여</td>
+                <td>신정</td>
+                <td>2000</td>
+            </tr>
+        
+            <tr>
+                <td>이사랑</td>
+                
+                <td>양평</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>임지혜</td>
+                
+                <td>안산</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>김민지</td>
+
+                <td>인천</td>
+                <td>1500</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
