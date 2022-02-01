@@ -44,10 +44,11 @@
     </form>
 
 
+    <!--radio를 사용한 단일선택-->
     <form action="http://localhost/login.php">
         <p></p>
             <h1>공부</h1>
-            HTML: <input type="radio" name="study" value="html" checked>
+            HTML: <input type="radio" name="study" value="html" checked> <!--checked = 미리 선택되어 있는 값 설정-->
             CSS: <input type="radio" name="study" value="css">
             JAVASCRIPT: <input type="radio" name="study" value="javascript"> 
         </p>
@@ -55,6 +56,7 @@
     </form>
 
 
+    <!--checkbox를 사용한 다중선택 -->
     <form action="http://localhost/login.php">
         <p>
             <h1>공부</h1>
@@ -62,6 +64,63 @@
             CSS: <input type="checkbox" name="study">
             JAVASCRIPT: <input type="checkbox" name="study" checked> 
         </p>
+        <input type="submit">
+    </form>
+
+
+    <!--button 사용-->    
+    <form action="http://localhost/login.php">
+            <input type="text">
+            <p>
+            <input type="submit" value="전송">
+            <input type="button" value="click" onclick="alert('냠냠')">
+            <input type="reset" value="reset">
+        </p>
+    </form>
+
+
+    <!--hidden 사용-->
+    <form>
+            <input type="text" name="id">
+            <input type="hidden" name="hid">
+            <input type="submit">
+    </form>
+
+
+    <!--label 사용-->
+    <form action="http://localhost/login.php">
+        <p>
+            <label for="id_txt">Id:</label>
+            <input id="id_txt" type="text" name="id" value="default value">
+        </p>
+        <p>
+            <label for="pw_txt">Pw:</label>
+            <input id="pw_txt"type="password" name="pwd">
+        </p>
+        <p>
+            <label>textarea:
+                <textarea id="area_txt"rows="2" cols="10" name="area">default</textarea>
+            </label>
+        </p>
+
+
+        <p> <!--글씨 클릭해도 체크 됨-->
+            <label>
+                <input type="checkbox" name="color" value="red">빨강
+            </label>
+
+            <!--위 아래 두 가지 모두 같은 것! 표현 방식이 다를 뿐-->
+
+            <label for="color_blue">
+                <input id="color_blue" type="checkbox" name="color" value="blue">파랑
+            </label>
+        </p>
+    </form>
+
+    <!--file 업로드/ 세부 내용 따로 공부-->
+    <form method="post" enctype="multipart/form-data">
+    <!-- <form action="http://localhost/upload.php"> -->
+        <input type="file">
         <input type="submit">
     </form>
 </body>
