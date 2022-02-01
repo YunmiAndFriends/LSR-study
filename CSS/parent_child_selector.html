@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모 자식 선택자</title>
+    <style>
+        /* 부모 = ul  자식 = li */
+        ul li{
+            color: red;
+        }
+
+        /* 직계 자손만 해당되도록 */
+        #lecture>li{
+            border: 1px solid royalblue;
+        }
+        ul, ol{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Html</li>
+        <li>Css</li>
+        <li>Javascript</li>
+    </ul>
+
+    <ol id="lecture">
+        <li>Html</li>
+        <li>Css
+            <ol>
+                <li>selector</li>
+                <li>declaration</li>
+            </ol>
+        </li>
+        <li>Javascript</li>
+    </ol>
+</body>
+</html>
