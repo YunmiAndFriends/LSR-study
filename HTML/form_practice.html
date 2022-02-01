@@ -11,9 +11,58 @@
         <p>Id: <input type="text" name="id" value="default"></p>
         <p>Pw: <input type="password" name="pwd"></p>
         <p>Adr: <input type="text" name="address"></p>
-        <p>여러줄<textarea rows="2" cols="10">default</textarea></p>
+        <p>여러줄<textarea rows="2" cols="10" name="area">default</textarea></p>
         <input type="submit">
     </form>
 
+
+    <!--단일 선택! -->
+    <form action="http://localhost/login.php">
+        <p>
+            <h1>과자</h1>
+            <select name="snak">
+                <option value="빼">빼빼로</option>
+                <option value="포">포카칩</option>
+                <option value="오">오감자</option>
+            </select>   
+        </p>
+        <input type="submit">
+    </form>
+
+
+    <!--다중선택! 컨트롤키 이용해서-->
+    <form action="http://localhost/login.php">
+        <p>
+            <h1>과자</h1>
+            <select name="snak" multiple>
+                <option value="빼">빼빼로</option>
+                <option value="포">포카칩</option>
+                <option value="오">오감자</option>
+            </select>   
+        </p>
+        <input type="submit">
+    </form>
+
+
+    <form action="http://localhost/login.php">
+        <p></p>
+            <h1>공부</h1>
+            HTML: <input type="radio" name="study" value="html" checked>
+            CSS: <input type="radio" name="study" value="css">
+            JAVASCRIPT: <input type="radio" name="study" value="javascript"> 
+        </p>
+        <input type="submit">
+    </form>
+
+
+    <form action="http://localhost/login.php">
+        <p>
+            <h1>공부</h1>
+            HTML: <input type="checkbox" name="study"checked>
+            CSS: <input type="checkbox" name="study">
+            JAVASCRIPT: <input type="checkbox" name="study" checked> 
+        </p>
+        <input type="submit">
+    </form>
 </body>
 </html>
