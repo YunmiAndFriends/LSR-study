@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 선택자</title>
+    <style>
+        ul *{
+            font-size: 30px;
+        }         
+        li:nth-child(2){
+            color: red;
+        }
+        ul:first-of-type{
+            color: sandybrown;
+        }
+        *:only-child{
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>다양한 선택자 연습!</h1>
+        <ul id="ul1"> 
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ul>
+        <ul>
+            <li>애플</li>
+            <li>삼성</li>
+            <li>엘지</li>
+        </ul>
+    <p>
+        <input type="text" placeholder="선택자를 입력하세요">
+        <input type="submit">
+    </p>
+    <table border="1">
+        <tr>
+            <td>제목</td>
+            <td>장르</td>
+            <td>인물</td>
+        </tr>
+        <tr>
+            <td>킹메이커</td>
+            <td>영화</td>
+            <td>이선균</td>
+        </tr>
+    </table>
+    <h2>단독 자식 연습</h2>
+    <div>
+        <p>child</p>
+        <p>parent</p>
+    </div>
+</body>
+</html>
