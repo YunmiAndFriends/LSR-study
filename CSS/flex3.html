@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙스</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>졸프노예</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>js</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quos dolorem, modi assumenda accusamus doloribus at voluptate facere sapiente ex amet nulla quasi illo nostrum voluptates velit, sed quae minima fuga fugiat architecto quaerat. Placeat reiciendis cumque, ducimus illum voluptates obcaecati quasi numquam doloribus nulla. Eos laboriosam magni, dicta dolor ipsum repudiandae, animi ad fugiat est, omnis quidem necessitatibus asperiores veritatis. Explicabo dicta obcaecati placeat dignissimos aliquid porro voluptatum natus minus, dolor molestias. Suscipit aspernatur iure accusamus ipsa consequuntur fugit sit magnam temporibus perspiciatis iste officiis asperiores adipisci consectetur sed quam distinctio, a minus eveniet ratione? Id ea quo hic!
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://github.com/YunmiAndFriends/LSR-study/wiki/CSS/_edit">사랑이 깃</a>
+        </footer>
+    </div>
+</body>
+</html>
